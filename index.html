@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Walking Dead</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id='map'></div>
+
+<div id='features'>
+   <img src="images/logo.png" alt="Titellogo" id="title">
+    <section id='1' class='active'>
+        <h1>THE WALKING DEAD - VERDENS MEST POPULÆRE ZOMBIE SERIE</h1>
+        <p>The Walking Dead er ikke bare blevet den mest populære fiktive verden indenfor zombie apokalypser, men en af de mest populære Tv-serier i verdenen. Tv-serien er en adaptation af Robert Kirkmans kritikerroste tegneserie af samme navn.</p>
+        <p>På trods af at dette fiktive univers foregår i en zombie apokalypse, så bliver ordet "zombie" aldrig brugt. I stedet henviser karakterene til dem som bl.a. walkers, biters, roamers og andet.</p>
+        <p>Dette kort viser hovedpersonen Rick Grimes rejse i at finde et sikkert opholdssted til ham og hans familie.</p>
+        <img src="images/1.jpg" alt="The Walking Dead plakat." class="screenshot">
+    </section>
+    <section id='2'>
+        <h2>ATLANTA, GEORGIA</h2>
+        <p>Hovedparten af serien foregår i og omkring Atlanta, Georgia i USA. Først i sæson 5 rejser de væk fra denne lokation, da de tager mod Washington D.C. i håbet om en kur til den spredende sygdom.</p>
+        <img src="images/2.jpg" alt="To personer der kigger ud over den nu ødelagte by Atlanta." class="screenshot">
+    </section>
+    <section id='3'>
+        <h2>HARRISON MEMORIAL HOSPITAL</h2>
+        <p>I Harrison Memorial Hospital er hvor Ricks historie begynder. Han vågner op fra en koma, efter at han blev skudt på sit arbejde som sherif. Han vågner op til at verdenen er gået under, uden nogen familie eller venner omkring sig. Svækket, går han gennem gangene i hospitalet, og finder meget hurtigt ud af, at de døde ikke længere forbliver døde.</p>
+        <img src="images/3.jpg" alt="Rick går gennem gangene i hospitalet, efter han er vågnet op fra komaen." class="screenshot">
+    </section>
+    <section id='4'>
+        <h2>DEN IKONISKE PLAKAT</h2>
+        <p>Plakaten fra første sæson er ikonisk, og er et perfekt eksempel på den post-apokalyptiske verden vi befinder os i.</p>
+        <p>Efter Rick returnere til sit hjem, og finder ud af at hans kone og søn ikke længere er der, beslutter han sig for at tage ind til Atlanta, da han regner med at storbyerne er de sikreste steder. Han finder dog hurtigt ud af, at under en zombie apokalypse kommer truslen ikke udefra. Det kommer indefra.</p>
+        <img src="images/4.jpg" alt="Den ikoniske plakat til seriens første sæson." class="screenshot">
+        
+    </section>
+    <section id='5'>
+        <h2>BELLWOOD QUARRY</h2>
+        <p>Inde i Atlanta bliver han reddet, fra en horde af zombier, af en ung asiatisk mand ved navn Glenn. Gennem ham møder han en lille gruppe af folk som han tilslutter sig. Sammen tager de tilbage til deres lejr ved Bellwood Quarry, hvor han ved et mirakel finder sin bedste ven, kone og søn sammen med den resterende del af gruppen.</p>
+        <img src="images/5.jpg" alt="3 af hovedpersonerne vasker tøj i vandet i stenbruddet." class="screenshot">
+        <p>Gruppen består af helt ordinære folk i alle aldre, og hvor de intet havde tilfælles i den gamle verden, har de nu alt tilfælles.</p>
+        <p>Rick finder senere i sæsonen ud af at hans kone Lori og hans bedste ven Shane, har indledt et romantisk forhold eftersom de troede Rick var omkommet på hospitalet. Dette skaber en masse intens drama der kulminerer i anden sæson.</p>
+        <img src="images/6.jpg" alt="Hele gruppen er samlet i deres camp." class="screenshot">
+    </section>
+    <section id='6'>
+        <h2>HERSHELS FARM</h2>
+        <p>Efter et angreb fra zombier og flere dødsfald, blev Ricks gruppe drevet væk fra deres lejr ved Bellwood Quarry. Ved et uheld bliver Ricks søn Carl skudt af en mand ved navn Otis, som var ude og jage efter mad. Otis tager Carl, Rick og resten af gruppen tilbage til en farm, hvor han kan få lægehjælp af dyrelægen Hershel som ejer farmen.</p>
+        <img src="images/7.jpg" alt="Rick og Hershel kigger ud over sidstnævntes farm." class="screenshot">
+        <p>Rick og hans gruppe bliver på Hershels farm hele anden sæson, da det virker som et sikkert sted.</p>
+        <p>Det er også her dramaet mellem Rick, Shane og Lori kulminere. Shane har altid været forelsket i Lori, og efter endelig at have fået hende, kan han ikke håndtere at hun er gået tilbage til Rick. Shane lokker Rick ud i skoven om natten for at dræbe ham. Rick formår dog at være hurtigere på aftrækkeren og dræber Shane.</p>
+        <p>På grund af larmen fra skuddene, fik Rick og hans gruppe tiltrukket sig en kæmpe horde af zombier mod sig. Samme nat som Shanes død, bliver Hershels farm overrendt og gruppen må igen flygte for sit liv.</p>
+        <img src="images/8.jpg" alt="Et billede af Hershels hus." class="screenshot">
+    </section>
+    <section id='7'>
+        <h2>FÆNGSLET</h2>
+        <p>Efter faldet af Hershels farm, finder Ricks gruppe fængslet i sæson 3. De beslutter sig af en grund for at slå sig ned her - store hegn og murer. Der er bare et problem. Hele fængslet er overrendt af døde fængselsvagter og fanger.</p>
+        <img src="images/9.png" alt="Et billede af fængslet, hvor Rick og hans gruppe opholder sig i sæson 3." class="screenshot">
+        <p>Efter at have tømt og sikret fængslet, begynder de at skabe sig et liv der. De ryder op og gør det nogenlunde hjemligt, og derudover gror de afgrøder i fængselsgården, for at have en stabil madressource.</p>
+        <p>Deres plan om et sikkert liv, bliver dog hurtigt spoleret af en anden gruppe ledet af en mand med storhedsvanvid, der kalder sig selv "The Governor". Han mener at han har større ret til fængslet, og kræver at Ricks gruppe overgiver det til ham. Da Rick og de andre nægter, prøver The Governor at overtage fængslet med magt. Han tager alle sine kampdygtige mænd og kvinder med, og medbringer endda tunge, eksplosive våben og en tank.</p>
+        <p>Det store slag over fængslet ender i mange dødsfald, og en afsluttende, brutal nævekamp mellem Rick og The Governor, som resultere i The Governors død. Fængslet er dog ikke til at redde, da hegnene er væltet og murene sprængt i stykker. Halvvejs igennem 4. sæson kan gruppen ikke finde hinanden og bliver nødt til at flygte fra de døde.</p>
+        <img src="images/10.jpg" alt="Et billede af Rick og hans gruppe, der er i gang med at tømme fængslet for 'Walkers'." class="screenshot">
+    </section>
+    <section id='8'>
+        <h2>TERMINUS</h2>
+        <p>Kvæstede, desperate og opdelt efter angrebet på fængslet, leder Rick og hans søn Carl efter et nyt sted at leve. Det samme gør resten af gruppen som også er spredt ud i flere mindre grupper. En efter en finder de skilte der leder til et sted kaldet "Terminus" - et fristed for overlevende. De følger skiltene der leder dem hen ad togskinnerne. I slutningen af 4. sæson ankommer de til Terminus, og udadtil virker det som det perfekte fristed.</p>
+        <img src="images/11.jpg" alt="Ricks gruppe ankommer til Terminus." class="screenshot">
+        <p>Sandheden er dog en helt anden. Fristedet Terminus udgiver sig kun for at være et fristed for overlevende, men i virkeligheden er det hjem til en gruppe mennesker, der har vendt sig til kannibalisme som den bedste overlevelsesmetode. Rick og hans gruppe bliver fanget i en container, og venter på at blive slagtet og tilberedt.</p>
+        <p>Heldigvis fandt alle i gruppen ikke sammen, inden de ankom til Terminus. Der var stadig én der ikke var ankommet - Carol. Hun er klog nok til at overvåge stedet inden hun går ind i fælden, og mens hun overvåger bygningen, ser hun Rick og de andre blive taget til fange. Hun udtænker en plan der involverer at lede en horde af zombier mod Terminus, og skyder hul i deres hegn med en grenatkaster, hun tog med fra fængslet. Med Carols hjælp flygter gruppen fra Terminus i sæson 5.</p>
+        <img src="images/12.jpg" alt="Et billede af Daryl og Glenn taget til fange." class="screenshot">
+    </section>
+    <section id='9'>
+        <h2>ALEXANDRIA SAFE ZONE</h2>
+        <p>Efter flugten fra Terminus finder Rick og hans gruppe en lille gruppe af tre; Abraham, Rosita og Eugene. Abraham og Rosita eskortere Eugene til Washington D.C., da han mener at han har fundett kuren til zombie apocalypsen. Ricks gruppe beslutter sig for at tilslutte sig deres mission.</p>
+        <p>På vejen til Washington D.C. finder de dog ud af at Eugene har løjet, og at han bare er en simpel high school lærer i fysik og kemi. Abraham mister besindelsen og banker ham. Hen ad vejen lærer gruppen dog at tilgive Eugene, og rejsen til Washington D.C. endte alligevel positivt. På vejen møder de nemlig Aaron som tager dem til Alexandria Safe Zone. Et aflukket kvarter i byen Alexandria syd for Washington D.C.</p>
+        <img src="images/13.png" alt="Et billede af Alexandria Safe Zone." class="screenshot">
+        <p>Ricks gruppe og indbyggerne i Alexandria Safe Zone opbygger et godt og sikkert hjem med høje mure, og her lever de sikkert indtil de møder den næste store skurk - Negan og hans Saviors.</p>
+        <img src="images/14.jpg" alt="Rick og hans søn Carl ser på deres nye hus i Alexandria." class="screenshot">
+    </section>
+    
+    
+
+</div>
+
+
+<script>
+    
+    
+    
+    
+    
+    
+    
+mapboxgl.accessToken = 'pk.eyJ1IjoibmlrbGFzbHlra2UiLCJhIjoiY2pmbWlzdWc3MTlodTJxbnptMTB0a3YxcSJ9.KPBeMwY6d7nucwGFBlmB1Q';
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/niklaslykke/cjgczaw2400012sqnjqxihppg',
+    center: [-99.954429, 40.146059],
+    zoom: 2.93,
+});
+
+// object with places and geographic positions
+var chapters = {
+    '1': {
+    center: [-99.954429,40.146059],
+        zoom: 2.93
+    },
+    '2': {
+        center: [-84.396649,33.751461],
+        pitch: 0,
+        zoom: 12
+    },
+    '3': {
+        center: [-84.459584,33.819786],
+        bearing: 0,
+        pitch: 75,
+        zoom: 18.31
+    },
+    '4': {
+        center: [-84.367271,33.761251],
+        bearing: -100,
+        zoom: 17
+    },
+    '5': {
+        center: [-84.434828, 33.781465],
+        bearing: 0,
+        zoom: 16
+    },
+    '6': {
+        center: [-84.526938,33.303208],
+        zoom: 16.38
+    },
+    '7': {
+        center: [-84.525194,33.289358],
+        zoom: 18
+    },
+    '8': {
+        center: [-84.398924,33.732254],
+        zoom: 18
+    },
+    '9': {
+        center: [-77.046805,38.801311],
+        pitch: 0,
+        zoom: 12
+    }
+};
+
+    
+// On every scroll event, check which element is on screen
+window.onscroll = function() {
+    
+
+    var chapterNames = Object.keys(chapters);
+    for (var i = 0; i < chapterNames.length; i++) {
+        var chapterName = chapterNames[i];
+        if (isElementOnScreen(chapterName)) {
+            setActiveChapter(chapterName);
+            break;
+        }
+    }
+};
+
+var activeChapterName = '1';
+    
+function setActiveChapter(chapterName) {
+    if (chapterName === activeChapterName) return;
+
+    map.flyTo(chapters[chapterName]);
+
+    document.getElementById(chapterName).setAttribute('class', 'active');
+    document.getElementById(activeChapterName).setAttribute('class', '');
+
+    activeChapterName = chapterName;
+}
+
+function isElementOnScreen(id) {
+    var element = document.getElementById(id);
+    var bounds = element.getBoundingClientRect();
+    return bounds.top < window.innerHeight && bounds.bottom > 0;
+}
+    
+    var geojson = {
+  type: 'FeatureCollection',
+  features: [{
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-84.459354,33.819786]
+    },
+    properties: {
+      title: 'Harrison Memorial Hospital',
+      description: 'Tv-seriens hospital, hvor Rick vågner fra sin koma, er faktisk et herberg for hjemløse kaldet Atlanta Mission.'
+    }
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-84.367271,33.761251]
+    },
+    properties: {
+      title: 'Freedom Parkway',
+      description: 'Motorvejen fra det kendte billede på Tv-serien plakat for sæson 1.'
+    }
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-84.434828, 33.781465]
+    },
+    properties: {
+      title: 'Bellwood Quarry',
+      description: 'Bellwood stenbruddet i Atlanta, Georgia hvor Rick og de andre opholdte sig det meste af første sæson.'
+    }
+  },        
+   {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-84.526938,33.303208]
+    },
+    properties: {
+      title: 'Hershels Farm',
+      description: 'Lone Oak Dr. i Senoia, Georgia er det klassiske hus, hvor Ricks gruppe opholdte sig det meste af sæson 2.'
+    }
+  },    
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-84.525194,33.289358]
+    },
+    properties: {
+      title: 'Fængslet',
+      description: 'Fængslet, hvor Rick og hans gruppe prøvede at holde sig sikker i hele 3. sæson, er faktisk et filmstudie kaldet Raleigh Studios.'
+    }
+  },   
+    {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-84.398924,33.732254]
+    },
+    properties: {
+      title: 'Terminus',
+      description: 'Fristedet "Terminus", Ricks gruppe brugte en halv sæson på at finde, er faktisk metal og tog fabrikken, Collier Metals.'
+    }
+  },    
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-77.046805,38.796000]
+    },
+    properties: {
+      title: 'Alexandria Safe Zone - Virginia',
+      description: 'Det lille frie samfund Alexandria er i Tv-serien et enkelt kvarter, aflukket af mure, i byen Alexandria, Virginia nær Washington D.C. Dog er optagelserne faktisk fra Senoia, Georgia.'
+    }
+  }]
+}; 
+    
+    
+// add markers to map
+geojson.features.forEach(function(marker) {
+
+  // create a HTML element for each feature
+  var el = document.createElement('div');
+  el.className = 'marker';
+
+  // make a marker for each feature and add to the map
+  new mapboxgl.Marker(el)
+  .setLngLat(marker.geometry.coordinates)
+    .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+  .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+  .addTo(map);
+});
+   
+    
+    // The 'building' layer in the mapbox-streets vector source contains building-height
+// data from OpenStreetMap.
+map.on('load', function() {
+    // Insert the layer beneath any symbol layer.
+    var layers = map.getStyle().layers;
+
+    var labelLayerId;
+    for (var i = 0; i < layers.length; i++) {
+        if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+            labelLayerId = layers[i].id;
+            break;
+        }
+    }
+
+    map.addLayer({
+        'id': '3d-buildings',
+        'source': 'composite',
+        'source-layer': 'building',
+        'filter': ['==', 'extrude', 'true'],
+        'type': 'fill-extrusion',
+        'minzoom': 15,
+        'paint': {
+            'fill-extrusion-color': 'rgb(120, 106, 74)',
+
+            // use an 'interpolate' expression to add a smooth transition effect to the
+            // buildings as the user zooms in
+            'fill-extrusion-height': [
+                "interpolate", ["linear"], ["zoom"],
+                15, 5,
+                15.05, ["get", "height"]
+            ],
+            'fill-extrusion-base': [
+                "interpolate", ["linear"], ["zoom"],
+                15, 5,
+                15.05, ["get", "min_height"]
+            ],
+            'fill-extrusion-opacity': 1
+        }
+    }, labelLayerId);
+});
+    
+</script>
+
+</body>
+</html>

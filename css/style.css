@@ -1,0 +1,103 @@
+/*Global*/
+/*@font-face {
+    font-family: mavenpro;
+    src: url(https://fonts.googleapis.com/css?family=Maven+Pro);
+    font-weight: inherit;
+}*/
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#title {
+    margin: 2%;
+    margin-left: 20%;
+}
+h1, h2 {
+    padding: 5%;
+    font-size: 4em;
+    text-align: center;
+    line-height: 100%;
+    font-family: haettenschweiler, sans-serif;
+    text-shadow: 3px 3px black;
+}
+
+p {
+    padding-bottom: 2%;
+    padding-top: 1%;
+    font-family: impact, sans-serif;
+    font-size: 1.4em;
+    text-shadow: 2px 2px black;
+}
+
+h1, h2, p {
+    color: rgb(207, 181, 124);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.screenshot {
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0px 9px 29px 8px rgba(0,0,0,0.5);
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#map {
+    position: fixed;
+    width: 50%;
+}
+
+#features {
+    width: 50%;
+    margin-left: 50%;
+    font-family: haettenschweiler, sans-serif;
+    overflow-y: scroll;
+    background-color: rgb(120, 106, 74);
+}
+
+section {
+    font-size: 15px;
+}
+
+section.active {
+    opacity: 1;
+    background-color: rgb(82, 54, 28);
+    padding-bottom: 5%;
+}
+
+
+.marker {
+  background-image: url('/images/marker.png');
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+    color: rgb(227, 202, 152);
+    background-color: rgb(120, 106, 74);
+}
+
+.mapboxgl-popup-content h3 {
+  font-family: haettenschweiler, sans-serif;
+    font-size: 3em;
+    text-shadow: 3px 3px black;
+    line-height: 100%;
+}
